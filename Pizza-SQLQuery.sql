@@ -83,22 +83,22 @@ ORDER BY pizza_category
 --- Top 5 best sellers by total pizza sold. 
 
 
-	 SELECT TOP 5
-	 pizza_name, COUNT(quantity) AS total_sales
-	 FROM pizza_sales
-	 GROUP BY pizza_name
-	 ORDER BY total_sales DESC
+ SELECT TOP 5
+ pizza_name, COUNT(quantity) AS total_sales
+ FROM pizza_sales
+ GROUP BY pizza_name
+ ORDER BY total_sales DESC
 
 
 	
 --Bottom 5 worst sellers by total pizza sold. 
 
 
-	 SELECT TOP 5
-	 pizza_name, COUNT(quantity) AS total_sales
-	 FROM pizza_sales
-	 GROUP BY pizza_name
-	 ORDER BY total_sales ASC
+SELECT TOP 5
+pizza_name, COUNT(quantity) AS total_sales
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY total_sales ASC
 
 --List of Pizza category
 SELECT DISTINCT(pizza_category)
